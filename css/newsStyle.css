@@ -1,0 +1,50 @@
+/* style.css */
+html, body{
+    height: 100%;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.navbar-brand{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2rem;
+    font-weight: normal;/*removes bold*/
+    letter-spacing: 3.5px;/*spaces out leters nicely*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: max-content;
+    grid-auto-flow: row dense;
+    padding: 2rem;
+}
+
+.article{
+    border: 0.5px solid #e8effc;
+}
+
+.article h2 {
+    color: black;
+    padding: 0.5rem;
+}
+
+.article a,
+.article a:visited {
+    text-decoration: none;
+    font-weight: normal;
+    color: #2b6091;
+    padding: 1rem;
+}
+
+.article:hover {
+    box-shadow: 6px 6px 5px darkgrey;
+}
+
+.article img {
+    width: 100%;
+}
